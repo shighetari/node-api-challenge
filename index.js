@@ -15,7 +15,7 @@ Go code!
 require("dotenv").config()
 const server = require('./server')
 
-const PORT = process.envPORT || 8000
+const PORT = process.env.PORT || 8000 //wouldnt deploy because i forgot a (.) lol
 
 server.listen(PORT, ()=> {
     console.log(`server is now running on port ${PORT}`)
