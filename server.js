@@ -1,10 +1,12 @@
 const express = require('express')
 const server =  express()
+const cors = require('cors')
 const projectRouter = require('./project/projectRouter')
 const actionRouter = require('./actions/actionRouter.js')
 
 //express
 server.use(express.json())
+server.use(cors())
 server.use(logger)
 server.get('/', (req,res) =>{
     const message = process.env.MESSAGE

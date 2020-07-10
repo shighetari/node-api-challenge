@@ -34,7 +34,6 @@ router.get('/:id', (req, res) => {
 })
 
 router.get('/:id/actions', (req, res) => {
-    const id = req.params.id
     const projectActions = req.project.actions
     //in the projectModel helper they have a function 
     //getProjectActions but I just added .actions to project.actions above
