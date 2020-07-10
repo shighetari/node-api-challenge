@@ -39,14 +39,19 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
-
+       We learned about express.json and routing. Express.json is essentially middleware that allows us to speak to the client using js via express.
+       Routing is also another form of middleware we learned about utilized in express. 
 - [ ] Describe Middleware?
+        Middleware is functionality imported or created used to extend, merge and build upon what we currently are limited to by restricting ourselves to one libary. These functionalities can operate in many ways but as of now, we've learned about intercepting incoming request for checks before accessing other parts of our code, for general use or as resctrictive and security checks. Middleware in essence is a function that takes, and gives back another function or request back to the designated functions. What we get back is the original request, but it is also mutable which means middleware can change, modify or not touch the request from when the middleware starts, too when the function ends.
 
 - [ ] Describe a Resource?
+a resource is something like our data, or anything that is given too us in the form of information.
+
 
 - [ ] What can the API return to help clients know if a request was successful?
-
+status(200) OK
 - [ ] How can we partition our application into sub-applications?
+    You can use express routing to create different paths that have their own designated rules and functionality, while using middleware to adjust as needed. Using different routes are still controlled by the same server.
 
 ## Minimum Viable Product
 
